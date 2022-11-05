@@ -30,7 +30,7 @@ set list " Show problematic characters.
 colorscheme onedark
 
 " transparent background
-highlight Normal ctermbg=none guibg=none
+" highlight Normal ctermbg=none guibg=none
 
 hi rainbowcol1 guifg=#123456
 

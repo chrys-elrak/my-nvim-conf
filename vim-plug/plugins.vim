@@ -38,6 +38,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Pocco81/HighStr.nvim' " Highlight string
     Plug 'lewis6991/gitsigns.nvim' " Git signs
     Plug 'dinhhuy258/git.nvim' " Git
+    Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'} " Minimap
     Plug 'f-person/git-blame.nvim' " Git blame
     Plug 'https://github.com/Yggdroot/indentLine' " Indent line
     Plug 'nvim-treesitter/nvim-treesitter-refactor'
@@ -46,6 +47,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'numToStr/FTerm.nvim' " Floating terminal
     Plug 'b0o/incline.nvim' " Status line
     Plug 'tomasiser/vim-code-dark' " Code dark theme
+    Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
     " Plug 'lukas-reineke/indent-blankline.nvim' " Indent blankline
     " Plug 'scrooloose/NERDTree' " file explorer
     " Plug 'Xuyuanp/nerdtree-git-plugin' " git status in nerdtree
