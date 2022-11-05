@@ -43,6 +43,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-treesitter/nvim-treesitter-refactor'
     Plug 'mrjones2014/smart-splits.nvim' " Smart splits
     Plug 'beauwilliams/focus.nvim' " Focus
+    Plug 'numToStr/FTerm.nvim' " Floating terminal
     " Plug 'lukas-reineke/indent-blankline.nvim' " Indent blankline
     " Plug 'scrooloose/NERDTree' " file explorer
     " Plug 'Xuyuanp/nerdtree-git-plugin' " git status in nerdtree

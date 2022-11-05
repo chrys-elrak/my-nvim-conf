@@ -66,3 +66,4 @@ nmap <leader>fh :Telescope help_tags<CR>
 " Buffer Switch
 nnoremap S :SwitchBuffer <CR>
 
+nnoremap <silent> <A-i> <CMD>lua require("FTerm").open()<CR>

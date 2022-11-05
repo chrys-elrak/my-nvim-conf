@@ -303,6 +303,14 @@ require('smart-splits').setup({
   tmux_integration = true,
 })
 
+require'FTerm'.setup({
+    border = 'double',
+    dimensions  = {
+        height = 0.9,
+        width = 0.9,
+    },
+})
+
 -- require("indent_blankline").setup({
 --    show_current_context = true,
 --    show_current_context_start = true,
