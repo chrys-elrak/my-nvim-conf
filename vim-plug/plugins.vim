@@ -21,6 +21,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'RyanMillerC/better-vim-tmux-resizer' " Vim Tmux Resizer
     Plug 'numToStr/Navigator.nvim' "Navigator.nvim " Navigate between splits
     Plug 'nvim-telescope/telescope.nvim' " Telescope
+    Plug 'nvim-lua/popup.nvim' " Telescope
+    Plug 'nvim-lua/plenary.nvim' " Telescope
+    Plug 'nvim-telescope/telescope-media-files.nvim' " Telescope
+    Plug 'nvim-telescope/telescope-github.nvim' " Telescope
     Plug 'nvim-lua/plenary.nvim' "Plenary.nvim " Required for telescope.nvim
     Plug 'ThePrimeagen/harpoon' " Terminal manager
     Plug 'ethanholz/nvim-lastplace' " Last place
@@ -34,6 +38,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Pocco81/HighStr.nvim' " Highlight string
     Plug 'lewis6991/gitsigns.nvim' " Git signs
     Plug 'dinhhuy258/git.nvim' " Git
+    Plug 'f-person/git-blame.nvim' " Git blame
+    Plug 'https://github.com/Yggdroot/indentLine' " Indent line
+    " Plug 'lukas-reineke/indent-blankline.nvim' " Indent blankline
     " Plug 'scrooloose/NERDTree' " file explorer
     " Plug 'Xuyuanp/nerdtree-git-plugin' " git status in nerdtree
     " Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " NERDTree Syntax Highlight

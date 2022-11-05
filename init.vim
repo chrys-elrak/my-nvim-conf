@@ -240,8 +240,44 @@ require('git').setup({
   target_branch = "master",
 })
 
+require("nvim-treesitter.configs").setup({
+  highlight = {
+    enable = true,
+  },
+  rainbow = {
+    enable = true,
+    extended_mode = true,
+    max_file_lines = nil,
+    colors = {
+      "#e06c75",
+      "#d19a66",
+      "#e5c07b",
+      "#98c379",
+      "#56b6c2",
+      "#61afef",
+      "#c678dd",
+    },
+    termcolors = {
+      "#e06c75",
+      "#d19a66",
+      "#e5c07b",
+      "#98c379",
+      "#56b6c2",
+      "#61afef",
+      "#c678dd",
+    },
+  },
+})
+
+-- require("indent_blankline").setup({
+--    show_current_context = true,
+--    show_current_context_start = true,
+-- })
+
 require("telescope").load_extension('harpoon')
+require("telescope").load_extension('media_files')
 EOF
+
 source $HOME/.config/nvim/config.vim
 source $HOME/.config/nvim/keymap.vim
 source $HOME/.config/nvim/coc.vim

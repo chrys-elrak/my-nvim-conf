@@ -1,3 +1,6 @@
+" Auto open nvimtree
+autocmd VimEnter * NvimTreeOpen
+
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
 set showmode            " Show current mode.
@@ -20,31 +23,34 @@ set nohlsearch
 set incsearch
 set switchbuf=usetab " use tab to switch between buffers
 set encoding=UTF-8
+set bg=dark
+set scrolloff=999
+set list " Show problematic characters.
+
+colorscheme onedark
+
+" transparent background
+highlight Normal ctermbg=none guibg=none
+
+" hide buffer number
+let g:switch_buffer_hide_numbers = 1
+" indent guides
+let g:indentLine_color_term = 239
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 augroup CursorLine
   au!
   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
   au WinLeave * setlocal nocursorline
 augroup END
-set bg=dark
-set scrolloff=999
-
-colorscheme onedark
-" transparent background
-highlight Normal ctermbg=none guibg=none
 
 " Tell Vim which characters to show for expanded TABs,
 " trailing whitespace, and end-of-lines. VERY useful!
 if &listchars ==# 'eol:$'
   set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 endif
-set list                " Show problematic characters.
+
 " Also highlight all tabs and trailing whitespace characters.
-highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+highlight ExtraWhitespace ctermbg=darkred guibg=darkred
 match ExtraWhitespace /\s\+$\|\t/
 
-" hide buffer number
-let g:switch_buffer_hide_numbers = 1
-
-" Auto open nvimtree
-autocmd VimEnter * NvimTreeOpen
