@@ -1,7 +1,7 @@
 "NORMAL MODE
 nnoremap <silent> <C-s> :w<CR>
 nnoremap <silent> <C-q> :q!<CR>
-nnoremap <silent> <C-w> :close<CR>
+nnoremap <silent> <C-w> :bw<CR>
 nnoremap <silent> <C-n> :NvimTreeFocus<CR>
 nnoremap <silent> <A-=> :vertical resize +5<CR>
 nnoremap <silent> <A--> :vertical resize -5<CR>
