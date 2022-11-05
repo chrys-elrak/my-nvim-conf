@@ -7,6 +7,8 @@ nnoremap <silent> <A-=> :vertical resize +5<CR>
 nnoremap <silent> <A--> :vertical resize -5<CR>
 nnoremap <silent> <A-[> :bprevious<CR>
 nnoremap <silent> <A-]> :bnext<CR>
+nnoremap <silent> <A-<> :resize +5<CR>
+nnoremap <silent> <A->> :resize -5<CR>
 
 "VISUAL MODE
 vnoremap <leader>n :NERDTreeFocus<CR>
@@ -54,11 +56,13 @@ nnoremap <silent> <c-j> <CMD>NavigatorDown<CR>
 nnoremap <silent> <c-p> <CMD>NavigatorPrevious<CR>
 
 " Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+let mapleader = ","
+nmap <leader>ff :Telescope find_files<CR>
+nmap <leader>fd :Telescope fd<CR>
+nmap <leader>fg :Telescope live_grep<CR>
+nmap <leader>fb :Telescope buffers<CR>
+nmap <leader>fh :Telescope help_tags<CR>
 
 " Buffer Switch
-nnoremap S :SwitchBuffer <cr>
+nnoremap S :SwitchBuffer <CR>
 

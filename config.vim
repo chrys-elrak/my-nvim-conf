@@ -32,6 +32,8 @@ colorscheme onedark
 " transparent background
 highlight Normal ctermbg=none guibg=none
 
+hi rainbowcol1 guifg=#123456
+
 " hide buffer number
 let g:switch_buffer_hide_numbers = 1
 " indent guides

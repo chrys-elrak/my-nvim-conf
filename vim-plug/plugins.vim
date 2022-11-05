@@ -40,6 +40,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'dinhhuy258/git.nvim' " Git
     Plug 'f-person/git-blame.nvim' " Git blame
     Plug 'https://github.com/Yggdroot/indentLine' " Indent line
+    Plug 'nvim-treesitter/nvim-treesitter-refactor'
+    Plug 'mrjones2014/smart-splits.nvim' " Smart splits
+    Plug 'beauwilliams/focus.nvim' " Focus
     " Plug 'lukas-reineke/indent-blankline.nvim' " Indent blankline
     " Plug 'scrooloose/NERDTree' " file explorer
     " Plug 'Xuyuanp/nerdtree-git-plugin' " git status in nerdtree

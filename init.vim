@@ -4,6 +4,7 @@ lua << EOF
 require('Navigator').setup()
 require'lspconfig'.pyright.setup{}
 require('nvim-highlight-colors').setup {}
+require("focus").setup()
 
 require'nvim-lastplace'.setup {
     lastplace_ignore_buftype = {"quickfix", "nofile", "help"},
@@ -74,7 +75,6 @@ require("bufferline").setup{
   },
 }
 
-
 require('harpoon').setup({
     save_on_toggle = false,
     save_on_change = true,
@@ -83,7 +83,6 @@ require('harpoon').setup({
     excluded_filetypes = { "harpoon" },
     mark_branch = false,
 })
-
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -267,6 +266,41 @@ require("nvim-treesitter.configs").setup({
       "#c678dd",
     },
   },
+})
+
+require'nvim-treesitter.configs'.setup {
+  refactor = {
+    highlight_definitions = {
+      enable = true,
+      clear_on_cursor_move = true,
+    },
+    -- highlight_current_scope = { enable = true },
+  },
+}
+
+require('smart-splits').setup({
+  ignored_filetypes = {
+    'nofile',
+    'quickfix',
+    'prompt',
+  },
+  ignored_buftypes = { 'NvimTree' },
+  default_amount = 3,
+  move_cursor_same_row = false,
+  resize_mode = {
+    quit_key = '<ESC>',
+    resize_keys = { 'h', 'j', 'k', 'l' },
+    silent = false,
+    hooks = {
+      on_enter = nil,
+      on_leave = nil
+    }
+  },
+  ignored_events = {
+    'BufEnter',
+    'WinEnter',
+  },
+  tmux_integration = true,
 })
 
 -- require("indent_blankline").setup({
