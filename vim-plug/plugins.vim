@@ -29,8 +29,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Yohannfra/Nvim-Switch-Buffer' " Switch buffer
     Plug 'nvim-tree/nvim-tree.lua' " File explorer
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Treesitter
-    Plug 'https://github.com/adelarsq/image_preview.nvim'
+    Plug 'brenoprata10/nvim-highlight-colors' " nvim-highlight-colors
     Plug 'navarasu/onedark.nvim' " One dark theme
+    Plug 'Pocco81/HighStr.nvim' " Highlight string
+    Plug 'lewis6991/gitsigns.nvim' " Git signs
+    Plug 'dinhhuy258/git.nvim' " Git
     " Plug 'scrooloose/NERDTree' " file explorer
     " Plug 'Xuyuanp/nerdtree-git-plugin' " git status in nerdtree
     " Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " NERDTree Syntax Highlight
