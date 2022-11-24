@@ -27,7 +27,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-telescope/telescope-github.nvim' " Telescope
     Plug 'nvim-lua/plenary.nvim' "Plenary.nvim " Required for telescope.nvim
     Plug 'ThePrimeagen/harpoon' " Terminal manager
-    Plug 'ethanholz/nvim-lastplace' " Last place
     Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
     Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' } " A snazzy nail_care buffer line (with tabpage integration) for Neovim built using lua
     Plug 'Yohannfra/Nvim-Switch-Buffer' " Switch buffer
@@ -48,6 +47,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'b0o/incline.nvim' " Status line
     Plug 'tomasiser/vim-code-dark' " Code dark theme
     Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
+    " nvim-cmp
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    Plug 'hrsh7th/cmp-buffer'
+    Plug 'hrsh7th/cmp-path'
+    Plug 'hrsh7th/cmp-cmdline'
+    Plug 'hrsh7th/nvim-cmp'
+    " For vsnip users.
+    Plug 'hrsh7th/cmp-vsnip'
+    Plug 'hrsh7th/vim-vsnip'
+    " Plug 'tribela/vim-transparent'
     " Plug 'lukas-reineke/indent-blankline.nvim' " Indent blankline
     " Plug 'scrooloose/NERDTree' " file explorer
     " Plug 'Xuyuanp/nerdtree-git-plugin' " git status in nerdtree
